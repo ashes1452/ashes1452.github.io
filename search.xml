@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>MyOwnBlogger</title>
+      <link href="/2025/11/28/MyOwnBlog/"/>
+      <url>/2025/11/28/MyOwnBlog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="测试正文"><a href="#测试正文" class="headerlink" title="测试正文"></a>测试正文</h1><p>这是一篇测试文章，用于排查 Hexo 日期解析错误。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2025/11/26/hello-world/"/>
       <url>/2025/11/26/hello-world/</url>
