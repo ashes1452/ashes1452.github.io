@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>MyOwnBlogger</title>
-      <link href="/2025/11/28/MyOwnBlog/"/>
-      <url>/2025/11/28/MyOwnBlog/</url>
+      <title>Week5</title>
+      <link href="/2025/11/28/week5/"/>
+      <url>/2025/11/28/week5/</url>
       
-        <content type="html"><![CDATA[<h1 id="测试正文"><a href="#测试正文" class="headerlink" title="测试正文"></a>测试正文</h1><p>这是一篇测试文章，用于排查 Hexo 日期解析错误。</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="OOP"><a href="#OOP" class="headerlink" title="OOP"></a>OOP</h3><p><strong>——通过对象间的交互完成程序</strong></p><h5 id="对象Object："><a href="#对象Object：" class="headerlink" title="对象Object："></a>对象Object：</h5><ul><li><p>属性</p></li><li><p>方法</p><h5 id="类："><a href="#类：" class="headerlink" title="类："></a><em>类：</em></h5><ul><li>父类</li><li>子类（继承父类属性同时也具有父类没有的属性和方法）</li></ul></li></ul><hr><h3 id="函数式编程（FC）"><a href="#函数式编程（FC）" class="headerlink" title="函数式编程（FC）"></a>函数式编程（FC）</h3><p><strong>——用函数形式写程序</strong></p><h5 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h5><ul><li>不可变 <em>（创建后不修改）</em></li><li>纯函数</li><li>函数是一等公民 <em>（函数作为变量、参数和返回值）</em></li><li>高阶函数 <em>（可接受、返回函数）</em></li></ul><h5 id="js中的对象"><a href="#js中的对象" class="headerlink" title="js中的对象"></a>js中的对象</h5><ul><li><p>原型</p><ul><li><p>函数对象. <em>prototype</em> –&gt; 原型对象</p><p>原型对象. <em>constructor</em> –&gt; 函数对象</p></li><li><p>构造函数 =&gt; 实例对象 <em><strong>（__proto__属性）</strong></em></p><p>实例对象. <em>__proto __</em> == 构造函数. <em>prototype</em> ==原型对象</p></li></ul></li><li><p>原型链</p></li></ul><p><strong>——层层递进指向各级原型对象直至Object.prototype(null)</strong></p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj={}</span><br><span class="line"><span class="comment">//obj=&gt;Object.prototype=&gt;null</span></span><br></pre></td></tr></tbody></table></figure><p><em>延长原型链</em><br><em>——如何实现继承</em></p><ul><li><p>Object.create()</p></li><li><p>直接修改prototype属性</p></li></ul><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Q</span>(<span class="params"></span>){}</span><br><span class="line">Q.<span class="property"><span class="keyword">prototype</span></span>=p</span><br><span class="line"><span class="keyword">var</span> q=<span class="keyword">new</span> <span class="title function_">Q</span>()</span><br><span class="line"><span class="comment">//q=&gt;p</span></span><br></pre></td></tr></tbody></table></figure><ul><li><p><del>Object.setPrototypeof(obj,prototype)设置__proto__属性</del></p></li><li><p>使用call和apply借用构造函数</p></li></ul><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> P = <span class="keyword">function</span>(<span class="params">v</span>) { </span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">a</span> = v; </span><br><span class="line">};</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Q</span>(<span class="params">v</span>) { </span><br><span class="line">  P.<span class="title function_">call</span>(<span class="variable language_">this</span>, v); </span><br><span class="line">}</span><br><span class="line"><span class="keyword">var</span> q = <span class="keyword">new</span> <span class="title function_">Q</span>(<span class="number">2</span>);</span><br></pre></td></tr></tbody></table></figure><p><em>可通过instanceof判断一个构造函数的prototype是否在原型链中</em></p><hr><h3 id="图解HTTPS"><a href="#图解HTTPS" class="headerlink" title="图解HTTPS"></a>图解HTTPS</h3>]]></content>
       
       
       
@@ -17,11 +17,24 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2025/11/26/hello-world/"/>
-      <url>/2025/11/26/hello-world/</url>
+      <title>梯子别挂了</title>
+      <link href="/2025/11/28/Blog2/"/>
+      <url>/2025/11/28/Blog2/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="别报错了"><a href="#别报错了" class="headerlink" title="别报错了"></a>别报错了</h3><p>别报错了别报错了别报错了别报错了别报错了别报错了别报错了</p><p>别报错了别报错了别报错了别报错了别报错了别报错了别报错了</p><p>别报错了别报错了别报错了别报错了别报错了别报错了别报错了</p><p>别报错了别报错了别报错了别报错了别报错了别报错了别报错了</p><p>别报错了别报错了别报错了别报错了别报错了别报错了别报错了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你们要努力进窄门</title>
+      <link href="/2025/11/28/MyFirstBlog/"/>
+      <url>/2025/11/28/MyFirstBlog/</url>
+      
+        <content type="html"><![CDATA[<h3 id="我至今没有写出诗"><a href="#我至今没有写出诗" class="headerlink" title="我至今没有写出诗"></a>我至今没有写出诗</h3><p>我们白白地给了你浩瀚的海洋，<br>白白地给了你惠特曼见了惊异的太阳：<br>你消磨了岁月，岁月也消磨了你，<br>你至今没有写出诗。</p>]]></content>
       
       
       
